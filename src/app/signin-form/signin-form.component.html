@@ -1,0 +1,16 @@
+<div class="contianer">
+    <div class="row justify-content-center">
+        <h3 class="col-md-2">Sign in</h3>
+    </div>
+
+    <div class="row justify-content-center">
+        <form #signin="ngForm" (ngSubmit)="submit(signin)" class="col-md-5">
+            <div *ngFor="let field of fields" class="form-group" [class]="field.class" class="field-container">
+                <app-form-field [field]="field"></app-form-field>
+            </div>
+            <div *ngFor="let button of buttons" class="button-container">
+                <app-form-button [button]="button"></app-form-button>
+            </div>
+        </form>
+    </div>
+</div>

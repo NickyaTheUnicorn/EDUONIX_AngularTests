@@ -1,0 +1,21 @@
+.button-container {
+    display: block;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.first-name-flex{
+    display: block;
+    float: left;
+    justify-content: center;
+    width: 49%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+}
+.last-name-flex {
+    display: block;
+    float: left;
+    justify-content: center;
+    width: 50%;
+    margin-bottom: 2%;
+}

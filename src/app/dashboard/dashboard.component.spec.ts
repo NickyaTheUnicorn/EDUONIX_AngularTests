@@ -20,6 +20,7 @@ describe('DashboardComponent', () => {
   });
 
   it('should create', () => {
+    localStorage.setItem('currentUser', JSON.stringify(1));
     expect(component).toBeTruthy();
   });
 });

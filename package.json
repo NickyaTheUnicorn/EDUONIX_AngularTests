@@ -1,6 +1,6 @@
 {
   "name": "user-dashboard",
-  "version": "0.0.0",
+  "version": "0.0.2",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -19,6 +19,7 @@
     "@angular/platform-browser": "~11.2.0",
     "@angular/platform-browser-dynamic": "~11.2.0",
     "@angular/router": "~11.2.0",
+    "karma-firefox-launcher": "^2.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"
@@ -41,5 +42,17 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~4.1.2"
-  }
+  },
+  "description": "This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ingefara/EDUONIX_user-dashboard.git"
+  },
+  "author": "rennery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ingefara/EDUONIX_user-dashboard/issues"
+  },
+  "homepage": "https://github.com/ingefara/EDUONIX_user-dashboard#readme"
 }

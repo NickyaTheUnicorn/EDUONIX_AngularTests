@@ -5,15 +5,7 @@ import { UserInterface } from './user-interface';
   providedIn: 'root'
 })
 export class UsersService {
-  users: UserInterface[] = [
-    {
-      id: 1,
-      firstName: 'Yannick',
-      lastName: 'Renner',
-      email: 'yannickrenner@email.com',
-      password: '1234qwer',
-    },
-  ];
+  users: UserInterface[] = [];
 
 
   constructor() {

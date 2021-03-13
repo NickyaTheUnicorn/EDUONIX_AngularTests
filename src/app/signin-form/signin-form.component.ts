@@ -54,12 +54,6 @@ export class SigninFormComponent implements OnInit {
   private router: Router;
 
   submit(signin: any): void {
-    this.fields.forEach(field => {
-      if (!field.validated) {
-        signin.form.status = 'INVALID';
-        this.formValid = false;
-      }
-    });
 
     const email = this.fields[0].value;
     const userPassword = this.dservice.getUserPassword(email);
@@ -70,6 +64,7 @@ export class SigninFormComponent implements OnInit {
     if (this.fields[1].value !== userPassword) {
       this.formValid = false;
     } else {
+      this.formValid = true;
       localStorage.setItem('currentUser', JSON.stringify(this.dservice.getUserId(email)));
       this.route.navigate(['/dashboard']);
     }

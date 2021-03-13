@@ -35,6 +35,10 @@ describe('SigninFormComponent', () => {
     localStorage.setItem('users-data', JSON.stringify([mockedUser]));
   });
 
+  afterEach(() => {
+    localStorage.clear();
+  });
+
   it('should create', () => {
     expect(component).toBeTruthy();
   });

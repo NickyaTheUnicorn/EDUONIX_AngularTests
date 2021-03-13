@@ -92,24 +92,19 @@ export class SignupFormComponent implements OnInit {
     },
   ];
 
-  submit(submit: any): void {
-    submit.form.touched = true;
-    submit.form.pristine = false;
+  submit(): void {
+    this.validForm = true;
     this.fields.forEach(field => {
       if (!field.validated) {
-        submit.form.status = 'INVALID';
         this.validForm = false;
       }
     });
-    if (submit.form.status === 'VALID') {
-      this.validForm = true;
+    if (this.validForm) {
       let userStringArray: string[] = new Array();
       for (let i = 0; i < this.fields.length - 1; i++) {
         userStringArray.push(this.fields[i].value);
       }
       this.dservice.storeUser(userStringArray);
-    } else {
-      submit.ngSubmit.hasError = true;
     }
   }
 

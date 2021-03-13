@@ -7,7 +7,7 @@
     </div>
 
     <div class="row justify-content-center">
-        <form #signup="ngForm" (ngSubmit)="submit(signup)" class="col-md-8">
+        <form #signup="ngForm" (ngSubmit)="submit()" class="col-md-8">
             <div *ngFor="let field of fields" class="form-group" [class]="field.class">
                 <app-form-field [field]="field"></app-form-field>
             </div>
